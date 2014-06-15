@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,300,700);
 
 a
 {
@@ -7,7 +7,24 @@ a
 
 body
 {
+	background: #222;
 	font-family: 'Open Sans', sans-serif;
+}
+
+footer
+{
+	background: #A10C0E;	
+	box-shadow: rgba(0,0,0,0.3) 0px -7px 8px;
+	margin-top: 1em;
+	padding: .5em 0 .5em 0;
+}
+
+footer p
+{
+	color: white;
+	font-size: 0.8em;
+	margin: 0;
+	text-align: center;
 }
 
 header
@@ -83,6 +100,7 @@ header #inicio_sesion
 
 #cuerpo
 {
+	background: white;
 	width: 100%
 }
 
@@ -100,19 +118,20 @@ header #inicio_sesion
 
 #novedades
 {
-	/*background: #F2F2F2;*/
+
 	box-shadow: rgba(0,0,0,0.2) 0px 7px 8px;
 	overflow: hidden;
 	padding: .5em;
-	position: relative;
 }
 
 #novedades article
 {
 	box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
 	float: left;
-	width: 31%;
 	margin: 0 1.1% 1em 1.2%;
+	min-height: 15em;
+	position: relative;
+	width: 31%;	
 }
 
 #novedades h2
@@ -126,25 +145,76 @@ header #inicio_sesion
 	color: #6B9E07;
 }
 
-#novedades .noticia .titulo_noticia
+#novedades .enlaces_noticia
+{
+	border-top: 1px solid #AAA;
+	font-size: .8em;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+}
+
+#novedades .enlaces_noticia .fecha_noticia
+{
+	color: #AAA;
+	float: right;
+	margin: .3em .3em .3em 0;
+}
+#novedades .enlaces_noticia .fecha_noticia a
 {
 	color: #6B9E07;
-	border-bottom: 2px solid #3CA5D2;
+}
+
+#novedades .enlaces_noticia .link_noticia
+{
+	color: #333;
+	float: left;
+	font-style: italic;
+	font-weight: bold;
+	margin: .3em 0 .3em .3em;
+}
+
+
+#novedades .noticia .img_noticia
+{
+	position: absolute;
+	right: .1em;
+	top: .1em;
+}
+
+#novedades .noticia .img_noticia img
+{
+	width: 60px;
+}
+
+#novedades .noticia .titulo_noticia_playstation, #novedades .noticia .titulo_noticia_xbox
+{
+	color: #333;
 	font-size: 1.2em;
-	margin-bottom: 0;
-	width: 90%;
+	width: 78%;
+}
+
+#novedades .noticia .titulo_noticia_playstation
+{
+	border-bottom: 2px solid #6B9E07;
+}
+
+#novedades .noticia .titulo_noticia_xbox
+{
+	border-bottom: 2px solid #6B9E07;
 }
 
 #novedades .noticia .texto_noticia
 {
-	margin-top: .3em;
+	font-weight: 300;
+	width: 80%;
 }
 
 
 #ordenes
 {
 	background: #A10C0E;
-	box-shadow: rgba(0,0,0,0.2) 0px 7px 8px;
+	box-shadow: rgba(0,0,0,0.3) 0px 7px 8px;
 	margin: 0 0 0 0;
 	overflow: hidden;
 }
@@ -170,6 +240,11 @@ header #inicio_sesion
 	margin-right: 2%;
 }
 
+#principal article p
+{
+	font-weight: 300;
+}
+
 #principal aside
 {
 	color: white;
@@ -192,6 +267,11 @@ header #inicio_sesion
 #principal h2 .h2_naranja
 {
 	color: #F48806;
+}
+
+#redes_sociales
+{
+	overflow: hidden;
 }
 
 #redes_sociales article
