@@ -1,6 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,700);
+
 a
 {
 	text-decoration: none;
+}
+
+body
+{
+	font-family: 'Open Sans', sans-serif;
 }
 
 header
@@ -34,6 +41,8 @@ nav ul li
 	display: inline-block;
 }
 
+/* ESTILOS INDIVIDUALES DE LOS BOTONES */
+
 nav ul li:nth-child(1)
 {
 	background: #9122F2;
@@ -54,12 +63,14 @@ nav ul li:nth-child(4)
 	background: #F48806;
 }
 
+/* FIN ESTILOS INDIVIDUALES DE LOS BOTONES */
+
 nav ul li a
 {
 	color: white;
 	display: block;
-	padding: 0.5em;
-
+	font-weight: bold;
+	padding: 0.5em 0.7em 0.5em 0.7em;
 }
 
 header #inicio_sesion
@@ -69,21 +80,138 @@ header #inicio_sesion
 	top: .5em;
 }
 
+
 #cuerpo
 {
-	margin: auto;
-	width: 1000px;
+	width: 100%
 }
+
+#facebook
+{
+	background: #3C5A96;
+}
+
+#facebook h2, #twitter h2
+{
+	color: white;
+	font-size: 1.3em;
+	margin: .5em 0 .3em .3em;
+}
+
+#novedades
+{
+	/*background: #F2F2F2;*/
+	box-shadow: rgba(0,0,0,0.2) 0px 7px 8px;
+	overflow: hidden;
+	padding: .5em;
+	position: relative;
+}
+
+#novedades article
+{
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
+	float: left;
+	width: 31%;
+	margin: 0 1.1% 1em 1.2%;
+}
+
+#novedades h2
+{
+	color: #333;
+	margin: .3em 0 0 0;
+}
+
+#novedades h2 .h2_verde
+{
+	color: #6B9E07;
+}
+
+#novedades .noticia .titulo_noticia
+{
+	color: #6B9E07;
+	border-bottom: 2px solid #3CA5D2;
+	font-size: 1.2em;
+	margin-bottom: 0;
+	width: 90%;
+}
+
+#novedades .noticia .texto_noticia
+{
+	margin-top: .3em;
+}
+
 
 #ordenes
 {
 	background: #A10C0E;
-	box-shadow: rgba(0,0,0,0.4) 0px 5px 10px;
-	margin-top: 0;
+	box-shadow: rgba(0,0,0,0.2) 0px 7px 8px;
+	margin: 0 0 0 0;
 	overflow: hidden;
 }
 
 #ordenes form
 {
 	margin: .5em 0 .5em .5em;
+}
+
+#principal
+{
+	/*background: #F2F2F2;*/
+	box-shadow: rgba(0,0,0,0.2) 0px 7px 8px;
+	overflow: hidden;
+	padding: .5em;
+	position: relative;
+}
+
+#principal article
+{
+	float: left;
+	width: 49%;
+	margin-right: 2%;
+}
+
+#principal aside
+{
+	color: white;
+	background: #333;
+	float: right;
+	height: 90%;
+	position: absolute;
+	right: 1em;
+	text-align: center;
+	top: 1em;
+	width: 48%;
+}
+
+#principal h2
+{
+	color: #333;
+	margin: .3em 0 0 0;
+}
+
+#principal h2 .h2_naranja
+{
+	color: #F48806;
+}
+
+#redes_sociales article
+{
+	float: left;
+	height: 215px;
+	width: 50%;
+}
+
+#twitter
+{
+	background: #3CA5D2;
+}
+
+
+@media screen and (min-width: 1000px){
+	#cuerpo
+	{
+		display: block;
+		margin: auto;
+		width: 1000px;
+	}
 }
