@@ -1,0 +1,297 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,300,700);
+
+a
+{
+	text-decoration: none;
+}
+
+body
+{
+	background: #222;
+	font-family: 'Open Sans', sans-serif;
+}
+
+footer
+{
+	background: #A10C0E;	
+	box-shadow: rgba(0,0,0,0.3) 0px -7px 8px;
+	margin-top: 1em;
+	padding: .5em 0 .5em 0;
+}
+
+footer p
+{
+	color: white;
+	font-size: 0.8em;
+	margin: 0;
+	text-align: center;
+}
+
+header
+{
+	position: relative;
+	margin-bottom: 0;
+	width: 100%;
+}
+
+header figure img
+{
+	max-height: 130px;
+}
+
+nav
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+nav ul
+{
+	list-style: none;
+	margin: 0;
+
+}
+
+nav ul li
+{
+	display: inline-block;
+}
+
+/* ESTILOS INDIVIDUALES DE LOS BOTONES */
+
+nav ul li:nth-child(1)
+{
+	background: #9122F2;
+}
+
+nav ul li:nth-child(2)
+{
+	background: #81AF31;
+}
+
+nav ul li:nth-child(3)
+{
+	background: #3CA5D2;
+}
+
+nav ul li:nth-child(4)
+{
+	background: #F48806;
+}
+
+/* FIN ESTILOS INDIVIDUALES DE LOS BOTONES */
+
+nav ul li a
+{
+	color: white;
+	display: block;
+	font-weight: bold;
+	padding: 0.5em 0.7em 0.5em 0.7em;
+}
+
+header #inicio_sesion
+{
+	position: absolute;
+	right: .5em;
+	top: .5em;
+}
+
+
+#cuerpo
+{
+	background: white;
+	width: 100%
+}
+
+#facebook
+{
+	background: #3C5A96;
+}
+
+#facebook h2, #twitter h2
+{
+	color: white;
+	font-size: 1.3em;
+	margin: .5em 0 .3em .3em;
+}
+
+#novedades
+{
+
+	box-shadow: rgba(0,0,0,0.2) 0px 7px 8px;
+	overflow: hidden;
+	padding: .5em;
+}
+
+#novedades article
+{
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
+	float: left;
+	margin: 0 1.1% 1em 1.2%;
+	min-height: 15em;
+	position: relative;
+	width: 31%;	
+}
+
+#novedades h2
+{
+	color: #333;
+	margin: .3em 0 0 0;
+}
+
+#novedades h2 .h2_verde
+{
+	color: #6B9E07;
+}
+
+#novedades .enlaces_noticia
+{
+	border-top: 1px solid #AAA;
+	font-size: .8em;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+}
+
+#novedades .enlaces_noticia .fecha_noticia
+{
+	color: #AAA;
+	float: right;
+	margin: .3em .3em .3em 0;
+}
+#novedades .enlaces_noticia .fecha_noticia a
+{
+	color: #6B9E07;
+}
+
+#novedades .enlaces_noticia .link_noticia
+{
+	color: #333;
+	float: left;
+	font-style: italic;
+	font-weight: bold;
+	margin: .3em 0 .3em .3em;
+}
+
+
+#novedades .noticia .img_noticia
+{
+	position: absolute;
+	right: .1em;
+	top: .1em;
+}
+
+#novedades .noticia .img_noticia img
+{
+	width: 60px;
+}
+
+#novedades .noticia .titulo_noticia_playstation, #novedades .noticia .titulo_noticia_xbox
+{
+	color: #333;
+	font-size: 1.2em;
+	width: 78%;
+}
+
+#novedades .noticia .titulo_noticia_playstation
+{
+	border-bottom: 2px solid #6B9E07;
+}
+
+#novedades .noticia .titulo_noticia_xbox
+{
+	border-bottom: 2px solid #6B9E07;
+}
+
+#novedades .noticia .texto_noticia
+{
+	font-weight: 300;
+	width: 80%;
+}
+
+
+#ordenes
+{
+	background: #A10C0E;
+	box-shadow: rgba(0,0,0,0.3) 0px 7px 8px;
+	margin: 0 0 0 0;
+	overflow: hidden;
+}
+
+#ordenes form
+{
+	margin: .5em 0 .5em .5em;
+}
+
+#principal
+{
+	/*background: #F2F2F2;*/
+	box-shadow: rgba(0,0,0,0.2) 0px 7px 8px;
+	overflow: hidden;
+	padding: .5em;
+	position: relative;
+}
+
+#principal article
+{
+	float: left;
+	width: 49%;
+	margin-right: 2%;
+}
+
+#principal article p
+{
+	font-weight: 300;
+}
+
+#principal aside
+{
+	color: white;
+	background: #333;
+	float: right;
+	height: 90%;
+	position: absolute;
+	right: 1em;
+	text-align: center;
+	top: 1em;
+	width: 48%;
+}
+
+#principal h2
+{
+	color: #333;
+	margin: .3em 0 0 0;
+}
+
+#principal h2 .h2_naranja
+{
+	color: #F48806;
+}
+
+#redes_sociales
+{
+	overflow: hidden;
+}
+
+#redes_sociales article
+{
+	float: left;
+	height: 215px;
+	width: 50%;
+}
+
+#twitter
+{
+	background: #3CA5D2;
+}
+
+
+@media screen and (min-width: 1000px){
+	#cuerpo
+	{
+		display: block;
+		margin: auto;
+		width: 1000px;
+	}
+}
